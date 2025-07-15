@@ -21,3 +21,7 @@ avg_productivity_by_role <- df %>%
   summarise(Average_Productivity = mean(Productivity_Score, na.rm = TRUE)) %>%
   arrange(desc(Average_Productivity))
 print(avg_productivity_by_role)
+
+# Linear Regression
+model <- lm(Productivity_Score ~ Coffee_Consumption + Sleep_Hours + Stress_Level, data = df)
+summary(model)

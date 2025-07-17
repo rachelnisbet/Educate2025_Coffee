@@ -19,18 +19,20 @@ We'll use the global_coffee_productivity.csv dataset to explore multi-language a
 
 **4.	Start with SAS**
 *	This is a SAS event – of course we are going to start with the SAS file, which is home to many of us.
+*  From your Coffee folder, open *coffee.sas*
 *	In this program:
     * Import the data
     * Remove any rows with missing values
-    * Compute summary statistics
+    * Compute summary statistics for all numeric variables
     * Create a bar chart of coffee consumption by country.
 
 **5.	Move to Python**
+*  Open *coffee.py*
 *	The syntax looks quite different here, but let’s stay within the same mindset of diving into coffee consumption. 
 *	In this program:
     * Load packages
     * Import data
-    * Compute summary statistics
+    * Compute summary statistics for n
     * Run an ANOVA to see if there’s actually a difference between coffee consumption by country
  	
 With only two files, we’ve already started to understand more about our data and the participants of our study. Close out of the current VS Code window and navigate back to the Workbench page. We can stop our workbench whenever we aren’t using it to save compute power, cloud costs, etc..
@@ -40,26 +42,26 @@ Although it’s not very likely that one person will be using three different la
 **6.	Explore the R script**
 *	Use the drop down to select the Launch VS Code – SAS and R.
 *	Even though this is technically a different space, we still have the same view – including the files we brought in previously!
-*	Open the .R file.
+*	Open the *coffee.r* file.
 *	In this program:
     * Load packages
     * Import data
-    * Summary stats
-    * Viewing Average Productivity by Job Role
-    * Frequencies for Job Role and Work from Home Status
-    * T-Test for Work from Home Status and Productivity
+    * View summary statistics
+    * Compute Average Productivity by Job Role
+    * Display frequencies for Job Role and Work from Home Status
+    * Run a T-Test for Work from Home Status and Productivity
 
-Nice—there are clear similarities across these files that let us compare how each language approaches the same task. But we’re also seeing unique traits emerge, especially in how the outputs are styled and presented. 
+Nice — there are clear similarities across these files that let us compare how each language approaches the same task. But we’re also seeing unique traits emerge, especially in how the outputs are styled and presented. 
 However, for someone who is new, these files might create more questions than answers. So, let’s start utilizing Notebooks, which are great for storytelling and teaching.
 
 **7.	Embrace the Notebook Format**
-*	Open the SAS Notebook (.sasnb) in VS Code. Notebooks are ideal for teaching and storytelling.
+*	Open the SAS Notebook (*coffee_SAS.sasnb*) in VS Code. Notebooks are ideal for teaching and storytelling.
 *	Notice how we are markdown cells between the code blocks, which provide explanation and context for what we’re doing.
 *	In this notebook:
-    * Importing the data (just in case you haven’t already)
-    * ANOVA for Job vs WFH
-    * T-Test
-    * Clustering
+    * Import the data (just in case you haven’t already)
+    * Run an ANOVA for Job vs Work From Home status
+    * Perform a T-Test on _____
+    * Segment participants into clusters
 
 Aren’t notebooks super cool?? Yes, we can continue using notebooks here; however, JupyterLab was created entirely for notebooks, so let’s jump there.
 To do this, close out of your current VS Code window, go back to the Workbench page, and using the dropdown, select Launch JupyterLab – Python and R. This gives you:
@@ -68,16 +70,18 @@ To do this, close out of your current VS Code window, go back to the Workbench p
 *	Visually appealing output for graphs and charts
 
 **8.	R in JupyterLab**
+*	If you aren't already there, dial into the Coffee folder in your files. Open the *coffee_R.ipynb*
 *	Once again, revel in the ability to add titles, links, commentary – you name it – within the markdown cells to supplement the code analysis.
 *	In this notebook:
     *	Load necessary packages
     *	Read the data
     *	Build a histogram
-    *	Correlation matrix?
-    *	Finish with a scatterplot
+    *	Compute correlations and view as a matrix
+    *	Finish by graphing a scatterplot
  	
 **9.	Python Notebook alongside R in JupyterLab** 
 *	Let’s do some similar stuff here for comparison’s sake – but add some extras.
+*	Open and view *coffee_Python.ipynb*
 *	In this notebook:
     * Load packages
     * Read the data

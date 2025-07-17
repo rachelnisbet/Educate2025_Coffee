@@ -48,7 +48,7 @@ We'll use the *global_coffee_productivity.csv* dataset to explore multi-language
 *	In this program:
     * Load packages
     * Import data
-    * Compute summary statistics for n
+    * Compute summary statistics for numeric variables
     * Run an ANOVA to see if there’s actually a difference between coffee consumption by country
  	
 With only two files, we’ve already started to understand more about our data and the participants of our study. Close out of the current VS Code window and navigate back to the Workbench page. We can stop our workbench whenever we aren’t using it to save compute power, cloud costs, etc..
@@ -56,13 +56,13 @@ But we aren’t actually done with our exploration!
 Although it’s not very likely that one person will be using three different languages for analysis, let’s switch to another workbench – one special for SAS and R – to continue.
 
 **6.	Explore the R script**
-*	Use the drop down to select the Launch VS Code – SAS and R.
+*	Use the drop down to select Launch VS Code – SAS and R.
 *	Even though this is technically a different space, we still have the same view – including the files we brought in previously!
 *	Open the *coffee.r* file.
 *	In this program:
     * Load packages
     * Import data
-    * View summary statistics
+    * View summary statistics and variable details
     * Compute Average Productivity by Job Role
     * Display frequencies for Job Role and Work from Home Status
     * Run a T-Test for Work from Home Status and Productivity
@@ -75,8 +75,8 @@ However, for someone who is new, these files might create more questions than an
 *	Notice how we are markdown cells between the code blocks, which provide explanation and context for what we’re doing.
 *	In this notebook:
     * Import the data (just in case you haven’t already)
-    * Run an ANOVA for Job vs Work From Home status
-    * Perform a T-Test on _____
+    * Run an ANOVA for Productivity by Job Role
+    * Perform a T-Test on Productivity and Work From Home Status
     * Segment participants into clusters
 
 Aren’t notebooks super cool?? Yes, we can continue using notebooks here; however, JupyterLab was created entirely for notebooks, so let’s jump there.

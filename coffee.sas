@@ -1,5 +1,9 @@
+/* Point to the GitHub folder where our dataset lives */
+/* Note: you may need to right-click and copy the path for your Educate2025_Coffee folder */
+%let path=/workspaces/myfolder/Educate2025_Coffee;
+
 /* Import the dataset */
-proc import datafile="/workspaces/storage/Coffee/global_coffee_productivity.csv"
+proc import datafile="&path/global_coffee_productivity.csv"
     out=coffee_data
     dbms=csv
     replace;
@@ -21,10 +25,4 @@ run;
 proc sgplot data=coffee_clean;
     vbar Country / response=Coffee_Consumption stat=mean;
     title "Average Coffee Consumption by Country";
-run;
-
-/* Bar chart: Productivity Score by Job Role */
-proc sgplot data=coffee_clean;
-    vbar Job_Role / response=Productivity_Score stat=mean;
-    title "Average Productivity Score by Job Role";
 run;

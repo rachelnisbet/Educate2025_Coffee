@@ -5,7 +5,6 @@ library(readr)
 # Load the dataset
 df <- read.csv("/workspaces/storage/Coffee/global_coffee_productivity.csv")
 
-
 # View structure and summary
 str(df)
 summary(df)

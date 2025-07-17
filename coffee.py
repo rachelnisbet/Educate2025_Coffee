@@ -8,7 +8,7 @@ import statsmodels.api as sm
 
 
 # Load the dataset
-df = pd.read_csv("/workspaces/storage/Coffee/global_coffee_productivity.csv")
+df = pd.read_csv("/workspaces/myfolder/Educate2025_Coffee/global_coffee_productivity.csv")
 
 # Display summary statistics
 print("Summary Statistics:")

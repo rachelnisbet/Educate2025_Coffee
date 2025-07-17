@@ -40,7 +40,7 @@ We'll use the *global_coffee_productivity.csv* dataset to explore multi-language
     * Import the data
     * Remove any rows with missing values
     * Compute summary statistics for all numeric variables
-    * Create a bar chart of coffee consumption by country.
+    * Create a bar chart of Coffee Consumption by Country.
 
 **5.	Move to Python**
 *  Open *coffee.py*
@@ -49,7 +49,7 @@ We'll use the *global_coffee_productivity.csv* dataset to explore multi-language
     * Load packages
     * Import data
     * Compute summary statistics for numeric variables
-    * Run an ANOVA to see if there’s actually a difference between coffee consumption by country
+    * Run an ANOVA to see if there’s actually a difference between Coffee Consumption by Country
  	
 With only two files, we’ve already started to understand more about our data and the participants of our study. Close out of the current VS Code window and navigate back to the Workbench page. We can stop our workbench whenever we aren’t using it to save compute power, cloud costs, etc..
 But we aren’t actually done with our exploration!
@@ -75,8 +75,9 @@ However, for someone who is new, these files might create more questions than an
 *	Notice how we are markdown cells between the code blocks, which provide explanation and context for what we’re doing.
 *	In this notebook:
     * Import the data (just in case you haven’t already)
-    * Run an ANOVA for Productivity by Job Role
     * Perform a T-Test on Productivity and Work From Home Status
+    * Run an ANOVA for Productivity by Job Role
+    * Run another ANOVA for Productivity and Age Group
     * Segment participants into clusters
 
 Aren’t notebooks super cool?? Yes, we can continue using notebooks here; however, JupyterLab was created entirely for notebooks, so let’s jump there.
@@ -86,23 +87,24 @@ To do this, close out of your current VS Code window, go back to the Workbench p
 *	Visually appealing output for graphs and charts
 
 **8.	R in JupyterLab**
-*	If you aren't already there, dial into the Coffee folder in your files. Open the *coffee_R.ipynb*
+*	If you aren't already there, dial into the Educate2025_Coffee folder in your files. Open the *coffee_R.ipynb*
 *	Once again, revel in the ability to add titles, links, commentary – you name it – within the markdown cells to supplement the code analysis.
 *	In this notebook:
     *	Load necessary packages
     *	Read the data
-    *	Build a histogram
-    *	Compute correlations and view as a matrix
-    *	Finish by graphing a scatterplot
+    *	Build a histogram to view overall Coffee Consumption
+    *	Compute correlations for all numeric variables
+    *	Enhance correlation matrix using graphics 
+    *	Graph a scatterplot to dive into the relationship between Productivity and Sleep
  	
-**9.	Python Notebook alongside R in JupyterLab** 
+**9.	Python Notebook in JupyterLab** 
 *	Let’s do some similar stuff here for comparison’s sake – but add some extras.
 *	Open and view *coffee_Python.ipynb*
 *	In this notebook:
     * Load packages
     * Read the data
-    * Build a histogram
-    * Correlation matrix
-    * Scatterplot
+    * Build a histogram for Sleep hours - with enhancements
+    * Create a correlation matrix for Coffee Consumption, Productivity, Sleep, and Stress
+    * Create a scatterplot to analyze if coffee affects productivity
 
 **WOW!** Six files. Three languages. Two interfaces. One unified platform for open-source learning, exploration, and comparison. You’ve just built an incredibly flexible data science playground in SAS Viya Workbench for Learners!

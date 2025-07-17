@@ -1,6 +1,22 @@
 # SAS Educate 2025: Exploring Versatility with SAS Viya Workbench for Learners
 
-We'll use the global_coffee_productivity.csv dataset to explore multi-language analytics workflows across SAS, Python, and R—inside both VS Code and JupyterLab.
+We'll use the *global_coffee_productivity.csv* dataset to explore multi-language analytics workflows across SAS, Python, and R—inside both VS Code and JupyterLab.
+
+##### Data Dictionary: `global_coffee_productivity.csv`
+
+| **Variable**           | **Description**                                                             | **Type**     | **Example Values**                      |
+|------------------------|------------------------------------------------------------------------------|--------------|------------------------------------------|
+| `Country`              | Country where the respondent is located                                     | Categorical  | USA, Germany, Japan                      |
+| `Job_Role`             | Professional role or job title of the individual                            | Categorical  | Product Manager, Designer, Data Scientist|
+| `Work_From_Home`       | Whether the respondent works remotely or not                                | Binary       | Yes, No                                  |
+| `Coffee_Consumption`   | Average cups of coffee consumed per day                                     | Continuous   | 0.1, 3.44, 5.23                           |
+| `Productivity_Score`   | Self-reported productivity score (0–100 scale)                              | Continuous   | 65.35, 88.85, 100                        |
+| `Sleep_Hours`          | Average number of sleep hours per night                                     | Continuous   | 4.8, 7.2, 8.9                            |
+| `Stress_Level`         | Self-reported stress level (likely on a scale 1–10)                         | Ordinal      | 1, 6, 10                                 |
+| `Age_Group`            | Age range of the respondent                                                  | Categorical  | 18–25, 26–35, 46–60                      |
+
+
+
 **1. Launch Workbench for Learners**
 * Log in to Workbench for Learners (WFL).
 *	If you don’t already have a workbench, create one and start it.

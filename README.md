@@ -14,8 +14,7 @@ We'll use the global_coffee_productivity.csv dataset to explore multi-language a
 *	This open-source IDE is a favorite for its modularity, fast performance, and strong ecosystem.
 
 **3.	Load Your Project**
-*	From the VS Code terminal, run:
-git clone https://github.com/rachelnisbet/Educate2025_Coffee.git
+*	From the VS Code terminal, run: `git clone https://github.com/rachelnisbet/Educate2025_Coffee.git`
 *	This clones your project into the file system. You'll now see the folder appear in the Files sidebar with all your code files ready to go.
 
 **4.	Start with SAS**

@@ -3,8 +3,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from statsmodels.formula.api import ols
-import statsmodels.api as sm
+from scipy.stats import f_oneway
 
 
 # Load the dataset
@@ -15,19 +14,19 @@ print("Summary Statistics:")
 print(df.describe())
 
 
-# Boxplot: Productivity Score by Stress Level and Work From Home
-plt.figure(figsize=(12, 6))
-sns.boxplot(data=df, x='Stress_Level', y='Productivity_Score', hue='Work_From_Home')
-plt.title("Productivity Score by Stress Level and Work From Home Status")
-plt.xlabel("Stress Level")
-plt.ylabel("Productivity Score")
-plt.legend(title="Work From Home")
-plt.tight_layout()
-plt.show()
+# One-way ANOVA
+group_US = df[df['Country'] == 'USA']['Coffee_Consumption']
+group_AU = df[df['Country'] == 'Australia']['Coffee_Consumption']
+group_DE = df[df['Country'] == 'Germany']['Coffee_Consumption']
+group_SK = df[df['Country'] == 'South Korea']['Coffee_Consumption']
+group_JP = df[df['Country'] == 'Japan']['Coffee_Consumption']
+group_BR = df[df['Country'] == 'Brazil']['Coffee_Consumption']
+group_FR = df[df['Country'] == 'France']['Coffee_Consumption']
+group_UK = df[df['Country'] == 'UK']['Coffee_Consumption']
+group_CA = df[df['Country'] == 'Canada']['Coffee_Consumption']
+group_IN = df[df['Country'] == 'India']['Coffee_Consumption']
+f_stat, p_value = f_oneway(group_US, group_AU, group_BR, group_CA, group_DE, group_FR, group_IN, group_JP, group_SK, group_UK)
 
-# Two-way ANOVA
-model = ols('Productivity_Score ~ C(Stress_Level) * C(Work_From_Home)', data=df).fit()
-anova_table = sm.stats.anova_lm(model, typ=2)
-print("Two-way ANOVA Results:")
-print(anova_table)
-
+print("One-way ANOVA Results:")
+print(f"F-statistic: {f_stat:.2f}")
+print(f"P-value: {p_value:.4f}")

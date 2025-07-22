@@ -7,6 +7,7 @@ from scipy.stats import f_oneway
 
 
 # Load the dataset
+# Reminder that your file path might be a little different!
 df = pd.read_csv("/workspaces/myfolder/Educate2025_Coffee/global_coffee_productivity.csv")
 
 # Display summary statistics

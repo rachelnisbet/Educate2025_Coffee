@@ -3,9 +3,10 @@ library(dplyr)
 library(readr)
 
 # Load the dataset
+# Update the path below to point to where your dataset lives
 df <- read.csv("/workspaces/myfolder/Educate2025_Coffee/global_coffee_productivity.csv")
 
-# View structure and summary
+# View structure and summary statistics
 str(df)
 print(summary(df))
 

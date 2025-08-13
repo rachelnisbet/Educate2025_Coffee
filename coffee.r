@@ -11,9 +11,9 @@ str(df)
 print(summary(df))
 
 # Average productivity by job role
-avg_productivity_by_role <- df %>%
-  group_by(Job_Role) %>%
-  summarise(Average_Productivity = mean(Productivity_Score, na.rm = TRUE)) %>%
+avg_productivity_by_role <- df |>
+  group_by(Job_Role) |>
+  summarise(Average_Productivity = mean(Productivity_Score, na.rm = TRUE)) |>
   arrange(desc(Average_Productivity))
 print(avg_productivity_by_role)
 

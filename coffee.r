@@ -30,3 +30,13 @@ df$Work_From_Home <- as.factor(df$Work_From_Home)
 t_test_result <- t.test(Productivity_Score ~ Work_From_Home, data = df)
 print("T-Test: Productivity by Work From Home Status")
 print(t_test_result)
+
+
+# Convert 'Country' to a factor if it's not already
+df$Country <- as.factor(df$Country)
+
+# Run one-way ANOVA
+anova_result <- aov(Coffee_Consumption ~ Country, data = df)
+
+# Display summary of the ANOVA
+print(summary(anova_result))
